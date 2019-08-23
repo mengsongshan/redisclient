@@ -9,7 +9,7 @@
 		<property name="menuBar" ref="menuBar"></property>
 	</bean>
 	
-	<bean id="menuBar" class="java.awt.Menubar">
+	<bean id="menuBar" class="java.awt.MenuBar">
 		
 	</bean>
 </beans>
