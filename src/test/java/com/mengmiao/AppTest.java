@@ -1,4 +1,4 @@
-package com.mengmiao.MicroRedis;
+package com.mengmiao;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
