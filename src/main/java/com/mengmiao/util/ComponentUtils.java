@@ -6,11 +6,11 @@ import java.awt.MenuItem;
 
 import org.springframework.util.CollectionUtils;
 
-import com.mengmiao.core.model.MenuItemModel;
-import com.mengmiao.core.model.MenuModel;
+import com.mengmiao.model.MenuItemModel;
+import com.mengmiao.model.MenuModel;
 
 public class ComponentUtils {
-	
+
 	public static MenuBar makeMenuBar() {
 		return new MenuBar();
 	}
@@ -23,12 +23,12 @@ public class ComponentUtils {
 				menu.add(item);
 			}
 		}
-		
+
 		return menu;
 	}
 
 	public static MenuItem makeMenuItem(MenuItemModel model) {
-		MenuItem item = new MenuItem(model.getName(),model.getShortcut());
+		MenuItem item = new MenuItem(model.getName(), model.getShortcut());
 		item.setEnabled(model.isEnable());
 		item.addActionListener(model.getListener());
 		return item;

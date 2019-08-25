@@ -4,12 +4,28 @@
 	xsi:schemaLocation="
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
 
-	<bean id="desktop" class="java.awt.Frame">
-		<property name="title" value="MicroRedis" />
-		<property name="menuBar" ref="menuBar"></property>
+	<bean id="desktop" class="com.mengmiao.core.Dashboard">
+		<constructor-arg name="dashboardName" value="MicroRedis" />
+		<property name="menus">
+			<list>
+			  <ref bean="menuFile" />
+			</list>
+		</property>
+
+	</bean>
+
+	<bean id="menuFile" class="com.mengmiao.core.ExtendMenu">
+		<constructor-arg name="lable" value="File"></constructor-arg>
+		<property name="items">
+			<list>
+				<ref bean="openConnect"></ref>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="openConnect" class="java.awt.MenuItem">
+		<constructor-arg name="label" value="New Connect"></constructor-arg>
 	</bean>
 	
-	<bean id="menuBar" class="java.awt.MenuBar">
-		
-	</bean>
+	<bean id="rectlyOpen" class="java.awt.Menu"></bean>
 </beans>
