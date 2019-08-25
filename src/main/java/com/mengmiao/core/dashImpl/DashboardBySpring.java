@@ -1,4 +1,4 @@
-package com.mengmiao.core.iml;
+package com.mengmiao.core.dashImpl;
 
 import com.mengmiao.core.Dashboard;
 
