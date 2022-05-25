@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>5.1.9.RELEASE</spring.version>
+		<spring.version>5.2.22.RELEASE</spring.version>
         <!--解决IDEA自动重置LanguageLevel和JavaCompiler版本的问题-->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
